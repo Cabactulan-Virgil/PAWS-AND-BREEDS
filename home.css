@@ -1,0 +1,275 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Nav Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #6A1C1C;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 104px;
+    height: auto;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.nav-search input[type="search"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nav-search input[type="search"]:focus {
+    border-color: #6A1C1C;
+    outline: none;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #B4622F;
+    padding: 10px 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    background-color: #6A1C1C;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    gap: 5px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 21px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #EAE4E0 36.05%, #B4622F 97.44%);
+    width: 100%;
+    height: 390px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.hero-content {
+    text-align: left;
+    color: #6A1C1C;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #EAE4E0 36.05%, #B4622F 97.44%);
+    color: #6A1C1C;
+    border: 1px solid #443014;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+    background: linear-gradient(180deg, #B4622F 36.05%, #EAE4E0 97.44%);
+    color: #fff;
+}
+
+/* Hero Image */
+.hero-image {
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 621px;
+    height: 419px;
+    z-index: 0;
+}
+
+/* Paws Image */
+.paws-image {
+    width: 148.74px;
+    height: 187.77px;
+    position: absolute;
+    top: 521.56px;
+    left: 666.78px;
+    opacity: 0;
+    transform: rotate(20deg);
+    transition: opacity 0.3s ease;
+}
+
+.paws-image.visible {
+    opacity: 1;
+}
+
+/* Popular Articles */
+.popular-articles {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.articles-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.article-card {
+    width: 288px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.article-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.article-card button {
+    padding: 8px 12px;
+    background-color: #B4622F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.article-card button:hover {
+    background-color: #6A1C1C;
+}
+
+/* About Us Section */
+.about-us {
+    width: 1004px;  /* Custom width */
+    height: 385.88px; /* Custom height */
+    position: absolute; /* Absolute positioning */
+    top: 971px;  /* Custom top position */
+    left: -57px; /* Custom left position */
+    background: #B4622F;  /* Background color */
+    gap: 0px;  /* No gap between elements */
+    opacity: 0;  /* Hidden by default */
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    transition: opacity 0.5s ease;  /* Smooth opacity transition */
+}
+
+.about-us.visible {
+    opacity: 1;  /* Show when the class 'visible' is added */
+}
+
+.about-us h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.about-us .description {
+    font-weight: 400;
+}
+
+.about-us .extra-text {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.about-us .img1 {
+    width: 604px;
+    height: 472px;
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 10px;
+}
+
+
+

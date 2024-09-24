@@ -1,0 +1,83 @@
+/* General Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+/* Container Styling */
+div {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+    background-color: #F8DFC6;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input Fields Styling */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Subheading Styling */
+h4 {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Secondary Heading Styling */
+h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* List Styling */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
