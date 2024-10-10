@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>PAWS-AND-BREEDS</title>
     <link rel="stylesheet" href="home.css">
 </head>
@@ -26,11 +26,6 @@
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact Us</a></li>
         </ul>
-        <div class="social-media">
-            <a href="#"><img src="img/1000001746 1.png" alt="Facebook" class="social-icon"></a>
-            <a href="#"><img src="img/1000001749 1.png" alt="Twitter" class="social-icon"></a>
-            <a href="#"><img src="img/1000001751 1.png" alt="Instagram" class="social-icon"></a>
-        </div>
     </div>
 
     <!-- Hero Section -->
@@ -68,17 +63,221 @@
         </div>
     </section>
 
-    <!-- Image Integration -->
-    <img src="img/paws 1.png" alt="Paws Image" class="paws-image">
+    <!-- Paws Images -->
+    <img src="img/paws 1.png" alt="Paw Image 1" class="paws-image1" style="max-width: 100%; height: auto;">
+    <img src="img/paws 1.png" alt="Paw Image 2" class="paws-image2" style="max-width: 100%; height: auto;">
 
     <!-- About Us Section -->
     <section class="about-us">
-        <h2>ABOUT US</h2>
-        <p>Welcome, Dogs</p>
-        <p class="description">
-            At Paws & Breeds, we're dedicated to providing the best care for your furry friends. Whether you have a product-related query or are interested in connecting with us for dog food-related business inquiries, we're here to assist you. Feel free to reach out for any questions or concerns. Your dog's well-being is our top priority, and we're committed to being a reliable partner on your pet care journey.
-        </p>
-        <img src="img/pug-dog-jumping-white-background_957108-6 1.png" alt="About Us Image" class="img1"> <!-- Replace with the actual image -->
+        <div class="about-us-content">
+            <h2>ABOUT US</h2>
+            <p class="welcome">Welcome, Dogs</p>
+            <p class="description" style="text-align: center;">
+                At Paws & Breeds, we're dedicated to providing the best care for your furry friends. Whether you have a product-related query or are interested in connecting with us for dog food-related business inquiries, we're here to assist you. Feel free to reach out for any questions or concerns. Your dog's well-being is our top priority, and we're committed to being a reliable partner on your pet care journey.
+            </p>
+        </div>
+        <img src="img/pug-dog-jumping-white-background_957108-6 1.png" alt="About Us Image" class="about-image" style="max-width: 100%; height: auto;">
     </section>
+
+<!-- Dog-Breeds Section -->
+<section class="dog-breeds">
+    <h2 class="dog-breeds-title">List of All Kinds of Dog Breeds</h2>
+    <p class="dog-breeds-description">
+        From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!
+    </p>
+
+<!-- Search for breed section -->
+<div class="search-section">
+    <h3>Find Your Perfect Dog</h3>
+    <input type="text" placeholder="Search for a breed..." />
+</div>
+
+
+    <div class="dog-breeds-container">
+
+        <!-- Additional buttons -->
+        <div class="category-buttons">
+            <button>Family Dogs</button>
+            <button>Easy to Train Dogs</button>
+            <button>Low Maintenance Dogs</button>
+            <button>Good for First Time Owners</button>
+            <button>Apartment Dogs</button>
+            <button>Can Live with Cats</button>
+        </div>
+
+        <div class="articles-container">
+            <!-- Article Card 1 -->
+            <div class="article-card">
+                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <h3>American Bully</h3>
+                <p>Friendly and courageous. Great family pets.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Article Card 2 -->
+            <div class="article-card">
+                <img src="img/poodle.png" alt="Poodle" class="article-image">
+                <h3>Poodle</h3>
+                <p>Intelligent and active. Requires grooming.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Article Card 3 -->
+            <div class="article-card">
+                <img src="img/german_shepherd.png" alt="German Shepherd" class="article-image">
+                <h3>German Shepherd</h3>
+                <p>Loyal and protective. Great working dogs.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Article Card 4 -->
+            <div class="article-card">
+                <img src="img/beagle.png" alt="Beagle" class="article-image">
+                <h3>Beagle</h3>
+                <p>Curious and friendly. Great for families.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Article Card 5 -->
+            <div class="article-card">
+                <img src="img/golden_retriever.png" alt="Golden Retriever" class="article-image">
+                <h3>Golden Retriever</h3>
+                <p>Intelligent and friendly. Great companions.</p>
+                <button>Read More</button>
+            </div>
+            <!-- Article Card 6 -->
+            <div class="article-card">
+                <img src="img/labrador.png" alt="Labrador" class="article-image">
+                <h3>Labrador</h3>
+                <p>Friendly and outgoing. Great family dogs.</p>
+                <button>Read More</button>
+            </div>
+        </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="pagination-button">1</button>
+                <button class="pagination-button">2</button>
+                <button class="pagination-button">3</button>
+                <button class="pagination-button">4</button>
+                <button class="pagination-button">5</button>
+                <button class="pagination-button">6</button>
+                <button class="pagination-button">Next</button>
+            </div>
+    </div>
+</section>
+
+
+ <!-- Reviews Section -->
+<section class="reviews">
+    <h2>What Pet Parents are Saying</h2>
+
+    <div class="review">
+        <p><strong>Virgil G.</strong></p>
+        <p>Namaak akong iro, gipaak pud nako.</p>
+        <form class="rating-form">
+            <label for="rating-virgil">Rate this review:</label>
+            <select id="rating-virgil" name="rating-virgil">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="review">
+        <p><strong>Chrisha K.</strong></p>
+        <p>MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW.</p>
+        <form class="rating-form">
+            <label for="rating-chrisha">Rate this review:</label>
+            <select id="rating-chrisha" name="rating-chrisha">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <div class="review">
+        <p><strong>Amiel B.</strong></p>
+        <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
+        <form class="rating-form">
+            <label for="rating-amiel">Rate this review:</label>
+            <select id="rating-amiel" name="rating-amiel">
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <p>Share your feedback with us!</p>
+</section>
+
+<!-- Contact Us Section -->
+<section class="contact-us">
+    <h2>Have Questions?</h2>
+    <h3>CONTACT US</h3>
+
+    <!-- Contact Info Row -->
+    <div class="contact-info-row">
+        <!-- Location Section -->
+        <div class="contact-info-item">
+            <img src="img/internet 1.png" alt="Location Icon" class="contact-icon">
+            <h4>OUR LOCATION</h4>
+            <p>Seoul, Korea</p>
+        </div>
+
+        <!-- Call Us Section -->
+        <div class="contact-info-item">
+            <img src="img/telephone 1.png" alt="Phone Icon" class="contact-icon">
+            <h4>CALL US</h4>
+            <p>+82-2-323-6850</p>
+        </div>
+
+        <!-- Email Section -->
+        <div class="contact-info-item">
+            <img src="img/mail 1.png" alt="Email Icon" class="contact-icon">
+            <h4>E-MAIL</h4>
+            <p><a href="mailto:Paws&Breeds.com">Paws&Breeds.com</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-column">
+            <p>Reg. Number : 105-87-73167</p>
+            <p>Tel : +82-2-323-6850</p>
+            <p>Address : 2001, Geumcheon-gu, Seoul</p>
+        </div>
+
+        <div class="footer-column">
+            <p><strong>Paws&Breeds</strong></p>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Paws&Breeds Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <p><strong>Help</strong></p>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+
 </body>
 </html>

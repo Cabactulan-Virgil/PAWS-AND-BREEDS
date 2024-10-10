@@ -12,6 +12,14 @@ body {
     color: #6A1C1C;
 }
 
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+    body {
+        zoom: 100%; /* Ensure 100% zoom for desktop */
+    }
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -83,6 +91,33 @@ nav {
     border-radius: 5px;
 }
 
+/* Dropdown Styles */
+.breeds-dropdown {
+    margin-bottom: 20px; /* Space below dropdown */
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex; /* Use flexbox to align buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below buttons */
+}
+
+.category-buttons button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #B4622F; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.category-buttons button:hover {
+    background-color: #6A1C1C; /* Change color on hover */
+}
+
 /* Social Media Icons */
 .social-media {
     display: flex;
@@ -98,10 +133,11 @@ nav {
 .hero {
     background: linear-gradient(180deg, #EAE4E0 36.05%, #B4622F 97.44%);
     width: 100%;
-    height: 390px;
+    height: 390px; /* Keeping the height the same as before */
     display: flex;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 20px; /* Padding adjustments for a tighter fit */
+    position: relative; /* Allow absolute positioning of the image */
 }
 
 .hero-content {
@@ -124,7 +160,7 @@ nav {
 
 .hero button {
     padding: 10px 20px;
-    background: linear-gradient(180deg, #EAE4E0 36.05%, #B4622F 97.44%);
+    background: linear-gradient(180deg, #B4622F 36.05%, #B4622F 97.44%);
     color: #6A1C1C;
     border: 1px solid #443014;
     border-radius: 5px;
@@ -140,27 +176,452 @@ nav {
 /* Hero Image */
 .hero-image {
     position: absolute;
-    right: 20px;
-    bottom: 10px;
-    width: 621px;
-    height: 419px;
-    z-index: 0;
+    right: 20px; /* Maintain the positioning */
+    bottom: 10px; /* Maintain the positioning */
+    height: 340px; /* Set fixed height */
+    width: auto; /* Maintain aspect ratio by setting width to auto */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
 }
 
-/* Paws Image */
-.paws-image {
-    width: 148.74px;
-    height: 187.77px;
+/* Popular Articles */
+.popular-articles {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the section heading and text */
+}
+
+.articles-container {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Spacing between the title/description and the container */
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1200px; /* Optional: Set a max width for larger screens */
+}
+
+.article-card {
+    width: 288px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center; /* Center text within the card */
+    transition: transform 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-5px);
+}
+
+.article-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.article-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.article-card button {
+    padding: 8px 12px;
+    background-color: #B4622F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.article-card button:hover {
+    background-color: #6A1C1C;
+}
+
+/* Paw Image 1 */
+.paws-image1 {
+    position: absolute; 
+    right: 50px; /* Position from the right side */
+    bottom: 50px; /* Position from the bottom */
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.4; /* Keep the opacity as is */
+    z-index: 1; /* Ensure it is above the hero image */
+}
+
+/* Paw Image 2 */
+.paws-image2 {
     position: absolute;
-    top: 521.56px;
-    left: 666.78px;
-    opacity: 0;
-    transform: rotate(20deg);
-    transition: opacity 0.3s ease;
+    width: 148.74px; /* Fixed width */
+    height: 187.77px; /* Fixed height */
+    left: -24.78px;   /* Fixed X Position */
+    top: 763px;       /* Fixed Y Position */
+    transform: rotate(-20deg);
+    opacity: 0.4;     /* 40% opacity */
 }
 
-.paws-image.visible {
-    opacity: 1;
+.about-us {
+    position: relative;
+    width: 100%;
+    height: 385.88px; /* Adjust height */
+    background-color: #B4622F; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.about-us-background {
+    position: relative;
+    width: 1004px; /* Width */
+    height: 100%; /* Full height of the section */
+    overflow: hidden;
+}
+
+.about-us-image {
+    position: absolute;
+    left: 397px; /* Adjusted position */
+    top: 949px; /* Adjusted position */
+    width: 604px; /* Adjusted width */
+    height: 472px; /* Adjusted height */
+    transform: rotate(0deg); /* Adjust the rotation as needed */
+}
+
+.about-us-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 40px; /* Font size for "ABOUT US" */
+    color: white; /* Font color */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Adjust margin for better spacing */
+}
+
+.about-us-welcome {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px; /* Font size for description */
+    color: white; /* Font color */
+    text-align: center; /* Center the text */
+    margin: 0; /* Reset margin */
+}
+
+
+
+
+.reviews {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.review {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-left: 4px solid #4CAF50; /* Add a green left border for emphasis */
+}
+.rating-form {
+    margin-top: 10px;
+}
+
+.rating-form label {
+    margin-right: 10px;
+}
+
+.rating-form select {
+    margin-right: 5px;
+    padding: 5px;
+}
+
+.rating-form button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rating-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+
+
+
+
+
+.contact-info-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-info-item {
+    flex: 1;
+    margin: 10px;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.contact-info-item h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contact-info-item p {
+    margin: 0;
+}
+.contact-us {
+    background-color: #B4622F;
+    padding: 20px; /* Adds padding for better spacing */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    color: white; /* Makes text color white for better contrast */
+}
+
+.contact-us h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-us h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+
+.footer {
+    background-color: #86583B; /* Background color as requested */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Align the columns */
+    flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+.footer-column {
+    margin: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+    body {
+        zoom: 100%; /* Ensure 100% zoom for desktop */
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 104px;
+    height: auto;
+}
+
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.nav-search input[type="search"] {
+    padding: 8px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.nav-search input[type="search"]:focus {
+    border-color: #6A1C1C;
+    outline: none;
+}
+
+/* Nav Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    background-color: #B4622F;
+    padding: 10px 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0;
+}
+
+.nav-links ul li {
+    display: inline;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+    background-color: #6A1C1C;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Dropdown Styles */
+.breeds-dropdown {
+    margin-bottom: 20px; /* Space below dropdown */
+}
+
+/* Category Buttons */
+.category-buttons {
+    display: flex; /* Use flexbox to align buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next line if necessary */
+    gap: 10px; /* Space between buttons */
+    margin-bottom: 20px; /* Space below buttons */
+}
+
+.category-buttons button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #B4622F; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.category-buttons button:hover {
+    background-color: #6A1C1C; /* Change color on hover */
+}
+
+/* Social Media Icons */
+.social-media {
+    display: flex;
+    gap: 5px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 21px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(180deg, #EAE4E0 36.05%, #B4622F 97.44%);
+    width: 100%;
+    height: 390px; /* Keeping the height the same as before */
+    display: flex;
+    align-items: center;
+    padding: 0 20px; /* Padding adjustments for a tighter fit */
+    position: relative; /* Allow absolute positioning of the image */
+}
+
+.hero-content {
+    text-align: left;
+    color: #6A1C1C;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #B4622F 36.05%, #B4622F 97.44%);
+    color: #6A1C1C;
+    border: 1px solid #443014;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero button:hover {
+    background: linear-gradient(180deg, #B4622F 36.05%, #EAE4E0 97.44%);
+    color: #fff;
+}
+
+/* Hero Image */
+.hero-image {
+    position: absolute;
+    right: 20px; /* Maintain the positioning */
+    bottom: 10px; /* Maintain the positioning */
+    height: 340px; /* Set fixed height */
+    width: auto; /* Maintain aspect ratio by setting width to auto */
+    max-width: 100%; /* Ensure it doesn't exceed container width */
 }
 
 /* Popular Articles */
@@ -172,9 +633,12 @@ nav {
 }
 
 .articles-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px; /* Spacing between the title/description and the container */
+    width: 100%; /* Ensure it takes the full width */
+    max-width: 1200px; /* Optional: Set a max width for larger screens */
 }
 
 .article-card {
@@ -222,54 +686,244 @@ nav {
     background-color: #6A1C1C;
 }
 
-/* About Us Section */
+/* Paw Image 1 */
+.paws-image1 {
+    position: absolute; 
+    right: 50px; /* Position from the right side */
+    bottom: 50px; /* Position from the bottom */
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    opacity: 0.4; /* Keep the opacity as is */
+    z-index: 1; /* Ensure it is above the hero image */
+}
+
+/* Paw Image 2 */
+.paws-image2 {
+    position: absolute;
+    width: 148.74px; /* Fixed width */
+    height: 187.77px; /* Fixed height */
+    left: -24.78px;   /* Fixed X Position */
+    top: 763px;       /* Fixed Y Position */
+    transform: rotate(-20deg);
+    opacity: 0.4;     /* 40% opacity */
+}
+
 .about-us {
-    width: 1004px;  /* Custom width */
-    height: 385.88px; /* Custom height */
-    position: absolute; /* Absolute positioning */
-    top: 971px;  /* Custom top position */
-    left: -57px; /* Custom left position */
-    background: #B4622F;  /* Background color */
-    gap: 0px;  /* No gap between elements */
-    opacity: 0;  /* Hidden by default */
-    padding: 20px;
-    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 385.88px; /* Adjust height */
+    background-color: #B4622F; /* Background color */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text horizontally */
+}
+
+.about-us-background {
+    position: relative;
+    width: 1004px; /* Width */
+    height: 100%; /* Full height of the section */
+    overflow: hidden;
+}
+
+.about-us-image {
+    position: absolute;
+    left: 397px; /* Adjusted position */
+    top: 949px; /* Adjusted position */
+    width: 604px; /* Adjusted width */
+    height: 472px; /* Adjusted height */
+    transform: rotate(0deg); /* Adjust the rotation as needed */
+}
+
+.about-us-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 40px; /* Font size for "ABOUT US" */
+    color: white; /* Font color */
+    text-align: center; /* Center the text */
+    margin: 10px 0; /* Adjust margin for better spacing */
+}
+
+.about-us-welcome {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 24px; /* Font size for "Welcome, Dogs" */
+    color: white; /* Font color */
     text-align: center;
-    transition: opacity 0.5s ease;  /* Smooth opacity transition */
+    margin-top: 10px; /* Adjust spacing */
 }
 
-.about-us.visible {
-    opacity: 1;  /* Show when the class 'visible' is added */
+.about-us-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal; /* Regular font */
+    color: white; /* Font color */
+    text-align: center;
+    padding: 0 20px; /* Adjust padding */
+    margin-top: 10px; /* Adjust spacing */
 }
 
-.about-us h2 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 10px;
+/* Dog Breeds Section */
+.dog-breeds {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #fff; /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-us p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 15px;
+.dog-breeds-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 32px; /* Title font size */
+    color: #6A1C1C; /* Title color */
+    text-align: center;
+    margin-bottom: 20px; /* Spacing below title */
 }
 
-.about-us .description {
-    font-weight: 400;
+.dog-breeds-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal; /* Regular font */
+    color: #6A1C1C; /* Description color */
+    text-align: center;
+    margin-bottom: 30px; /* Spacing below description */
+    padding: 0 20px; /* Padding for description */
 }
 
-.about-us .extra-text {
-    font-size: 14px;
-    font-style: italic;
+.dog-breeds-container {
+    display: flex;
+    flex-direction: column; /* Make the container column-based */
+    align-items: center; /* Center align items */
+}
+.dog-breeds-container input[type="text"] {
+    padding: 10px; /* Add padding */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Optional: set a max width */
+    margin-bottom: 20px; /* Space below the input */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
 }
 
-.about-us .img1 {
-    width: 604px;
-    height: 472px;
-    margin: 20px auto 0;
-    display: block;
-    border-radius: 10px;
+
+/* Center the search section */
+.search-section {
+    display: flex; /* Use flexbox to align items */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    margin: 20px 0; /* Space above and below */
+}
+
+.search-section h3 {
+    font-size: 24px; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #6A1C1C; /* Color to match the theme */
+}
+
+.search-section input[type="text"] {
+    padding: 10px; /* Add padding */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Optional: set a max width */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    transition: border-color 0.3s ease; /* Transition for border color */
+}
+
+.search-section input[type="text"]:focus {
+    border-color: #6A1C1C; /* Border color on focus */
+    outline: none; /* Remove outline */
+}
+
+
+.dog-breed-card {
+    width: calc(33.33% - 20px); /* Three cards per row with spacing */
+    margin: 10px; /* Margin for spacing */
+    height: 200px; /* Fixed height */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.dog-breed-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.dog-breed-image {
+    width: 100%; /* Full width */
+    height: auto; /* Auto height */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Footer */
+.footer {
+    background-color: #6A1C1C; /* Footer background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding */
+}
+
+.footer p {
+    margin: 10px 0; /* Margin for paragraphs */
+    font-size: 14px; /* Font size */
+}
+
+/* Common styles for buttons */
+button {
+    background-color: #B4622F; /* Updated button background color */
+    color: white;              /* Text color */
+    border: none;              /* Remove border */
+    border-radius: 5px;       /* Rounded corners */
+    padding: 10px 15px;       /* Padding for top/bottom and left/right */
+    cursor: pointer;           /* Pointer on hover */
+    font-size: 16px;           /* Font size */
+    margin: 5px;              /* Margin for spacing */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+/* Specific styles for the pagination buttons */
+.pagination-button {
+    background-color: #B4622F; /* Updated to match the new color */
+}
+
+.pagination-button:hover {
+    background-color: #8B4A36; /* Darker shade on hover for better contrast */
+}
+
+/* Optional: Add active button style */
+.pagination-button.active {
+    background-color: #8B4A36; /* Darker shade for active button */
+    font-weight: bold;         /* Bold text for the active button */
 }
 
 
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 300px; /* Adjusted height for mobile */
+    }
+    
+    .hero h1 {
+        font-size: 24px; /* Adjusted font size for mobile */
+    }
+
+    .hero p {
+        font-size: 12px; /* Adjusted font size for mobile */
+    }
+
+    .hero button {
+        font-size: 14px; /* Adjusted font size for mobile */
+    }
+
+    .article-card {
+        width: 90%; /* Adjust width for mobile */
+    }
+
+    .popular-articles {
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .category-buttons {
+        flex-direction: column; /* Stack buttons vertically on mobile */
+        align-items: center; /* Center buttons */
+    }
+}
