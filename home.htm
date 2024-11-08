@@ -10,7 +10,6 @@
 
 <!-- Navigation Section -->
 <nav>
-    
     <div class="nav-links">
         <div class="nav-logo">
             <img src="img/1000001718 1.png" alt="Logo" class="logo-img"> <!-- Logo in the nav-links -->
@@ -21,7 +20,7 @@
             <li><a href="#">Dog Breeds</a></li>
             <li><a href="#">Reviews</a></li>
             <li><a href="#">Contact Us</a></li>
-            <li><a href="#">My Account</a></li> <!-- New My Account Link -->
+            <button class="account-nav-button">My Account</button>
         </ul>
         <div class="search-container">
             <input type="search" placeholder="Search...">
@@ -31,15 +30,109 @@
 
 
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Find the Breed That Fits Your Lifestyle!</h1>
-            <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything <br> you need to know about your favorite dog breed!</p>
-            <button>Contact Us</button>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-slider">
+        <!-- First Slide (Hero Content) -->
+        <div class="slide active">
+            <div class="hero-content">
+                <h1>Find the Breed That Fits Your <span>Lifestyle!</span></h1>
+                <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
+                <!-- Login/Register Buttons (Initially Hidden) -->
+                <button id="login-now-btn" class="login-register-btn">Login Now</button>
+                <button id="register-now-btn" class="login-register-btn">Register Now</button>
+            </div>
+            <img src="img/1000001726 1.png" alt="Dog breeds gallery" class="hero-image">
         </div>
-        <img src="img/1000001726 1.png" alt="Dog breeds gallery" class="hero-image">
-    </section>
+
+        <!-- Login Slide -->
+        <div class="slide">
+            <div class="hero-content">
+                <h1>Login to Access Your Features</h1>
+                <p>Please enter your credentials to login.</p>
+                <form id="login-form-section" style="display:none;">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="pwd">Password</label><br>
+                    <input type="password" id="pwd" name="pwd" required><br><br>
+                    <input type="submit" value="Login">
+                </form>
+            </div>
+            <img src="img/1000001726 1.png" alt="Login Slide" class="hero-image">
+        </div>
+
+        <!-- Register Slide -->
+        <div class="slide">
+            <div class="hero-content">
+                <h1>Register for More Benefits</h1>
+                <p>Create an account to start enjoying exclusive benefits!</p>
+                <form id="register-form-section" style="display:none;">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" id="fname" name="fname" required><br><br>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" required><br><br>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+                    <label for="pwd">Password</label><br>
+                    <input type="password" id="pwd" name="pwd" required><br><br>
+                    <input type="submit" value="Register">
+                </form>
+            </div>
+            <img src="img/1000001726 1.png" alt="Register Slide" class="hero-image">
+        </div>
+    </div>
+
+    <!-- Slider Pagination Dots -->
+    <div class="pagination-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="slider-controls">
+        <button class="prev">&lt;</button> <!-- Left arrow -->
+        <button class="next">&gt;</button> <!-- Right arrow -->
+    </div>    
+</section>
+
+<!-- Include the JS Script -->
+<script>
+    // Handle the "Login Now" button click
+    document.getElementById('login-now-btn').addEventListener('click', function() {
+        const loginForm = document.getElementById('login-form-section');
+        
+        // Toggle the display of the login form
+        if (loginForm.style.display === 'none' || loginForm.style.display === '') {
+            loginForm.style.display = 'block'; // Show the login form
+            // Ensure the register form is hidden
+            document.getElementById('register-form-section').style.display = 'none'; // Hide register form
+        }
+    });
+
+    // Handle the "Register Now" button click
+    document.getElementById('register-now-btn').addEventListener('click', function() {
+        const registerForm = document.getElementById('register-form-section');
+        
+        // Toggle the display of the register form
+        if (registerForm.style.display === 'none' || registerForm.style.display === '') {
+            registerForm.style.display = 'block'; // Show the register form
+            // Ensure the login form is hidden
+            document.getElementById('login-form-section').style.display = 'none'; // Hide login form
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
 
     <!-- Popular Articles Section -->
     <section class="popular-articles">
@@ -281,6 +374,6 @@
     </div>
 </footer>
 
-
+<script src="heroslider.js"></script>
 </body>
 </html>
