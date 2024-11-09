@@ -290,6 +290,14 @@ nav {
     gap: 10px;
     z-index: 10; /* Keeps dots above other elements */
 }
+.pagination{
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+}
 
 .dot {
     width: 12px;
@@ -520,13 +528,16 @@ nav {
 .articles-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    align-content: center;
+    align-self: center;
     gap: 20px;
     margin-top: 20px;
     width: 100%;
-    max-width: 1200px;
 }
 
 .article-card {
+    justify-self: center;
     width: 288px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -577,6 +588,7 @@ nav {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 20px;
+    margin-top: 70px;
 }
 
 .category-buttons button {
@@ -677,6 +689,7 @@ button:hover {
 
 /* Pagination Buttons */
 .pagination-button {
+    justify-self: center;
     background-color: #B4622F;
 }
 
@@ -698,11 +711,11 @@ button:hover {
     position: relative;
     width: 100%;
     height: 385.88px;
-    background-color: #B4622F;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-repeat: no-repeat;
 }
 
 .about-us-title {
@@ -730,9 +743,30 @@ button:hover {
     margin-top: 10px;
 }
 
+.about-us-content{
+    display: flex;
+    width: 600px;
+    right: 300px;
+}
+.about-image{
+    right: 300px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+}
 
-
-
+.dog-breeds-title {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    
+}
+.dog-breeds{
+    
+}
 
 
 
