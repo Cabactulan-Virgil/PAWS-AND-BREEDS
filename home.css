@@ -709,7 +709,7 @@ button:hover {
 /* About Us Section */
 .about-us {
     position: relative;
-    width: 100%;
+    width: 100px;
     height: 385.88px;
     display: flex;
     align-items: center;
@@ -717,16 +717,40 @@ button:hover {
     text-align: center;
     background-repeat: no-repeat;
 }
-
+.about-us-content{
+    background-size: 100%automatic;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
 .about-us-title {
+    background-position-x: -169%;
+    background-position-y: 28% ;
+    width: 351px;
+    height: 29px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 40px;
-    color: white;
     margin: 10px 0;
 }
+.about-us-img1 {
+    background-position-x:-116% ;
+    background-position-y:496% ;
+    max-width: 604px 472px;
+}
 
-.about-us-welcome {
+.about-us-img2{
+    background-position-x:-73% ;
+    background-position-y:558% ;
+    width: 1004px; 
+    height: 398px;
+}
+.about-us.welcome-p{
+    background-position-x: -169;
+    background-position-y: 28 ;
+    width: 351px;
+    height: 29px;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 24px;
@@ -741,21 +765,20 @@ button:hover {
     text-align: center;
     padding: 0 20px;
     margin-top: 10px;
+    background-position-x: 352;
+    background-position-y: 725;
+    width: 462px;
+    height: 117px;
 }
 
 .about-us-content{
+    background-repeat: no-repeat;
     display: flex;
     width: 600px;
     right: 300px;
 }
-.about-image{
-    right: 300px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    justify-self: center;
-    
-}
+
+
 
 .dog-breeds-title {
     display: flex;
