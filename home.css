@@ -894,6 +894,8 @@ margin-top: 7vw;
     text-decoration: none;
 }
 
+
+/*Login Area*/
 #LoginAreaaa{
 
     top: 0vw;
@@ -955,7 +957,7 @@ margin-top: 7vw;
     opacity: 0.8;  
 }
 
-#exitbtnnn{
+#Lexitbtnnn{
     position: absolute;
     top: 1vw;
     right: 1vw;
@@ -965,4 +967,87 @@ margin-top: 7vw;
     height: 2vw;
     border-radius: 3vw;
     border: none;
+}
+
+
+
+
+
+/*REgister Area*/
+#RegisterAreaaa{
+
+    top: 0vw;
+    left: 0vw;
+    z-index: 300;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none; /* flex IF EDIT, none if Not edit  */
+    align-items: center;
+    justify-content: center; 
+}
+
+#RegisterFillupform{
+    position: absolute;
+    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.2);
+    width: 40vw;
+    height: 30vw;
+    border-radius: 1vw;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    flex-direction: column;
+
+}
+
+#RegisterFillupform h2{
+    font-size: 3vw;
+    margin-bottom: 2vw;
+}
+#RegisterFillupform input{
+    font-size: 1vw;
+    margin-bottom: 0.5vw;
+    width: 30vw;
+    padding: 0.5vw;
+    border-radius: 3vw;
+
+}
+
+#Registerbuttnnn{
+    font-size: 2vw;
+    background-color: rgb(42, 109, 23);
+    color: #fff;
+    border-radius: 3vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    margin-top: 3vw;
+}
+
+.BlurrBackgroundd{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;  
+}
+
+#Rexitbtnnn{
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+    background-color: #6A1C1C;
+    color: #fff;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 3vw;
+    border: none;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
 }

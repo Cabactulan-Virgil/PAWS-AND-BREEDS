@@ -26,14 +26,40 @@
 
     <div id="LoginAreaaa">
         <div id="lOginFillupform">
-            <button id="exitbtnnn">X</button>
+            <button id="Lexitbtnnn">X</button>
             <h2>LOGIN</h2>
+            <h3>Already registered user please login here.</h3><br>
+            <form method="POST" action="login.php"></form>
             <input type="text" placeholder="Username">
             <input type="password" placeholder="Password">
             <button id="loginbuttnnn">Login</button>
+        </form>
+        <h3><a href="#RegisterAreaaa">Already have an account? Login</a></h3>
         </div>
         <div class="BlurrBackgroundd"></div>
     </div>
+
+    <div id="RegisterAreaaa">
+        <div id="RegisterFillupform">
+            <button id="Rexitbtnnn">X</button>
+            <h2>Register</h2>
+            <h3>Don’t miss out on new product updates <br> and personalized tips and tricks!</h3><br>
+            
+            <!-- Registration Form -->
+            <form method="POST" action="Register.php">
+                <input type="text" name="firstname" placeholder="Firstname" required>
+                <input type="text" name="lastname" placeholder="Lastname" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button id="Registerbuttnnn">Register</button>
+            </form>
+            
+            <h3><a href="#LoginAreaaa">Already have an account? Login</a></h3>
+        </div>
+        <div class="BlurrBackgroundd"></div>
+    </div>
+    
 
 
 <!-- Hero Section -->
@@ -332,6 +358,7 @@
     </div>
 </footer>
 
-<script src="heroslider.js"></script>
+<script src="handler.js"></script>
+<script src="Register.js"></script>
 </body>
 </html>
