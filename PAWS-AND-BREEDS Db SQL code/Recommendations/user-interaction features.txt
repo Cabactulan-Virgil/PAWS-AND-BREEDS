@@ -1,0 +1,70 @@
+Dog Photos
+CREATE TABLE dog_photos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  dog_profile_id INT NOT NULL,
+  image_url VARCHAR(255) NOT NULL,
+  caption TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (dog_profile_id) REFERENCES dog_profiles(id)
+);
+
+Dog Videos
+CREATE TABLE dog_videos (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  dog_profile_id INT NOT NULL,
+  video_url VARCHAR(255) NOT NULL,
+  caption TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (dog_profile_id) REFERENCES dog_profiles(id)
+);
+
+
+Breed Reviews
+CREATE TABLE breed_reviews (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  breed_id INT NOT NULL,
+  rating TINYINT NOT NULL,
+  review_text TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (breed_id) REFERENCES dog_breeds(id)
+);
+
+Comments
+CREATE TABLE comments (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  dog_profile_id INT,
+  breed_review_id INT,
+  comment_text TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (dog_profile_id) REFERENCES dog_profiles(id),
+  FOREIGN KEY (breed_review_id) REFERENCES breed_reviews(id)
+);
+
+Likes
+CREATE TABLE likes (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  dog_profile_id INT,
+  breed_review_id INT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (dog_profile_id) REFERENCES dog_profiles(id),
+  FOREIGN KEY (breed_review_id) REFERENCES breed_reviews(id)
+);
+
+
+
+Adoption Inquiries
+CREATE TABLE adoption_inquiries (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  dog_profile_id INT NOT NULL,
+  inquiry_message TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (user_id) REFERENCES users(id),
+  FOREIGN KEY (dog_profile_id) REFERENCES dog_profiles(id)
+);

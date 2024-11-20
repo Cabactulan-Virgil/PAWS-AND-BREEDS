@@ -10,55 +10,95 @@
 
     
 <!-- Navigation Section -->
-    <div class="nav-links">
-        <img src="img/1000001718 1.png" class="logo-img"> <!-- Logo in the nav-links -->
-        <ul>
-            <li><a href="#HEROOO">Home</a></li>
-            <li><a href="#ABOUTUSSSS">About Us</a></li>
-            <li><a href="#DOGBREEEDS">Dog Breeds</a></li>
-            <li><a href="#REVIEWWWS">Reviews</a></li>
-            <li><a href="#ContactUSSSS">Contact Us</a></li>
-            <li><a id="myAccBtn">My Account</a></li>
-            <lI><input id="SearchAreaa" placeholder="Search.."></lI>
-        </ul>
-        <div class="LightBackgrounddd"></div>
-    </div>
+<div class="nav-links">
+    <img src="img/1000001718 1.png" class="logo-img" alt="Logo">
+    <ul>
+        <li><a href="#HEROOO">Home</a></li>
+        <li><a href="#ABOUTUSSSS">About Us</a></li>
+        <li><a href="#DOGBREEEDS">Dog Breeds</a></li>
+        <li><a href="#REVIEWWWS">Reviews</a></li>
+        <li><a href="#ContactUSSSS">Contact Us</a></li>
+        
+         <!-- Account Dropdown -->
+         <li class="account-dropdown">
+            <label for="dropdown-toggle" class="dropdown-toggle">Login</label>
+            <input type="checkbox" id="dropdown-toggle">
+            <ul class="dropdown-content">
+                <li><button id="login-now-btn" class="dropdown-btn">Login</button></li>
+                <li><button id="register-now-btn" class="dropdown-btn">Register</button></li>
+            </ul>
+        </li>
+        
+        
+        <!-- Search Area -->
+        <li>
+            <input id="SearchAreaa" placeholder="Search..">
+        </li>
+    </ul>
+</div>
 
-    <div id="LoginAreaaa">
-        <div id="lOginFillupform">
-            <button id="Lexitbtnnn">X</button>
-            <h2>LOGIN</h2>
-            <h3>Already registered user please login here.</h3><br>
-            <form method="POST" action="login.php"></form>
-            <input type="text" placeholder="Username">
-            <input type="password" placeholder="Password">
+<!-- Login Modal -->
+<div id="LoginAreaaa" class="modal hidden">
+    <div id="lOginFillupform">
+        <button id="Lexitbtnnn">X</button>
+        <h2>LOGIN</h2>
+        <h3>Already registered user, please login here.</h3><br>
+        <form method="POST" action="login.php">
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
             <button id="loginbuttnnn">Login</button>
         </form>
-        <h3><a href="#RegisterAreaaa">Already have an account? Login</a></h3>
-        </div>
-        <div class="BlurrBackgroundd"></div>
+        <h3><a href="#" id="switchToRegister">Don't have an account? Register</a></h3>
     </div>
+</div>
+<!-- Register Modal -->
+<div id="RegisterAreaaa" class="modal hidden">
+    <div id="RegisterFillupform">
+        <button id="Rexitbtnnn">X</button>
+        <h2>Register</h2>
+        <h3>Don’t miss out on new product updates <br> and personalized tips and tricks!</h3><br>
+        
+        <!-- Add a container for form, image, and additional text -->
+        <div class="form-container">
+            <!-- Form Section -->
+            <div class="form-section">
+                <form method="POST" action="Register.php">
+                    <div class="input-group">
+                        <input type="text" name="firstname" placeholder="Firstname" required>
+                        <input type="text" name="lastname" placeholder="Lastname" required>
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button id="Registerbuttnnn">Register</button>
+                </form>
+            </div>
+            
+            <!-- Image Section -->
+            <div class="image-section">
+                <img src="New folder/PAWS-AND-BREEDS/img/1000001718 1.jpg" alt="Paws and Breeds Image">
+            </div>
+            
+            <!-- Additional Text Section -->
+            <div class="additional-info">
+                <h3>NEW MEMBER</h3>
+                <p>Create your account with us to unlock the following benefits:</p>
+                <ul>
+                    <li>Ask an expert</li>
+                    <li>Enjoy complimentary samples</li>
+                    <li>Utilize interactive tools for a deeper understanding of your dog needs</li>
+                    <li>Explore informative articles to enrich your pet journey</li>
+                </ul>
+                <h3><a href="#" id="switchToLogin">Already have an account? Login</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+    
 
-    <div id="RegisterAreaaa">
-        <div id="RegisterFillupform">
-            <button id="Rexitbtnnn">X</button>
-            <h2>Register</h2>
-            <h3>Don’t miss out on new product updates <br> and personalized tips and tricks!</h3><br>
-            
-            <!-- Registration Form -->
-            <form method="POST" action="Register.php">
-                <input type="text" name="firstname" placeholder="Firstname" required>
-                <input type="text" name="lastname" placeholder="Lastname" required>
-                <input type="email" name="email" placeholder="Email" required>
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button id="Registerbuttnnn">Register</button>
-            </form>
-            
-            <h3><a href="#LoginAreaaa">Already have an account? Login</a></h3>
-        </div>
-        <div class="BlurrBackgroundd"></div>
-    </div>
+
+
+
     
 
 
@@ -70,36 +110,18 @@
             <div class="hero-content">
                 <h1>Find the Breed That Fits Your<br>Lifestyle!</h1>
                 <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
-                <!-- Login/Register Buttons (Initially Hidden) -->
-                <button id="login-now-btn" class="login-register-btn">Login Now</button>
-                <button id="register-now-btn" class="login-register-btn">Register Now</button>
+                <!-- Know About Us Button with Link -->
+                <a href="#ABOUTUSSSS">
+                    <button id="about-us-nav-btn" class="about-us-nav-button">Know About Us!</button>
+                </a>
+                
+                
+                
             </div>
             <img src="img/1000001726 1.png" class="hero-image">
         </div>
-
-        <!-- Login Slide -->
-        <div class="slide">
-            <div class="hero-content">
-                <h1>Login to Access Your Features</h1>
-                <p>Please enter your credentials to login.</p>
-                <form id="login-form-section" style="display:none;">
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
-                    <label for="pwd">Password</label><br>
-                    <input type="password" id="pwd" name="pwd" required><br><br>
-                    <input type="submit" value="Login">
-                </form>
-            </div>
-            <img src="img/1000001726 1.png" alt="Login Slide" class="hero-image">
-        </div>
-
+    </div>
 </section>
-
-
-
-
-
-
 
 
     <!-- About Us Section -->
@@ -359,6 +381,5 @@
 </footer>
 
 <script src="handler.js"></script>
-<script src="Register.js"></script>
 </body>
 </html>

@@ -76,6 +76,7 @@ nav {
     opacity: 0.3;
     z-index: -1;
 }
+
 /* Nav link styles */
 .nav-links ul li a{
     text-decoration: none;
@@ -90,9 +91,86 @@ nav {
     border-radius: 2vw;
     border: 0.1vw solid #212121;
 }
+
 /* Hover effect for nav links */
 .nav-links ul li a:hover{
     scale: 1.5;
+}
+
+/* Account Dropdown Styles */
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Toggle (Login Button) */
+.account-dropdown .dropdown-toggle {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.8vh 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown toggle */
+.account-dropdown .dropdown-toggle:hover {
+    background-color: #6A1C1C;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Hidden checkbox used to toggle dropdown visibility */
+.account-dropdown input[type="checkbox"] {
+    display: none;
+}
+
+/* Dropdown Content (hidden by default) */
+.account-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/* Show dropdown when checkbox is checked */
+.account-dropdown input[type="checkbox"]:checked + .dropdown-content {
+    display: block;
+}
+
+/* Dropdown Items */
+.dropdown-content li {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Dropdown Button Styles */
+.dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #EAE4E0;
+    color: #6A1C1C;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Hover effect for dropdown buttons */
+.dropdown-btn:hover {
+    background-color: #B4622F;
+    color: white;
 }
 
 /* Account Nav Button (adjusted to match nav links size and style) */
@@ -134,7 +212,6 @@ nav {
     border-radius: 5vw;
     padding-left: 1vw;
 }
-
 
 
 
@@ -226,61 +303,6 @@ nav {
     opacity: 1;
 }
 
-/* Pagination Dots */
-.pagination-dots {
-    position: absolute;
-    bottom: 80px; /* Dots are placed just above the controls */
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 10px;
-    z-index: 10; /* Keeps dots above other elements */
-}
-.pagination{
-    margin-top: 70px;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: white; /* Inactive dots are white */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background-color: #6A1C1C; /* Active dot is dark red */
-}
-
-/* Slider Controls (Previous and Next buttons) */
-.slider-controls {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: space-between;
-    width: 95%; /* Ensure the buttons are slightly more compact */
-    z-index: 15; /* Keeps controls above the hero image */
-}
-
-.slider-controls button {
-    background-color: transparent; /* Transparent background */
-    color: #fff; /* White text color for black arrows */
-    border: 2px solid #fff; /* White border */
-    padding: 12px 24px; /* Adjusted padding to match navigation button size */
-    font-size: 16px; /* Adjust font size to match nav button size */
-    cursor: pointer;
-    border-radius: 30px; /* Adjusted border-radius for a more pill-like button */
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
 
 /* Forms Section (Initially Hidden) */
 #login-form-section, #register-form-section {
@@ -304,6 +326,35 @@ nav {
 }
 
 
+/* Hero Section About Us Button */
+#about-us-nav-btn, .about-us-nav-button {
+    padding: 12px 24px;                  /* Match the padding of the Login button */
+    background-color: #EAE4E0;           /* Light background color similar to nav */
+    color: #333;                         /* Dark text color, same as nav buttons */
+    border: none;                        /* No border */
+    font-size: 14px;                     /* Slightly smaller font size for consistency */
+    font-weight: bold;                   /* Bold text */
+    cursor: pointer;                    /* Pointer cursor */
+    border-radius: 30px;                 /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    display: inline-block;               /* Keeps it inline with other elements */
+    text-align: center;                  /* Centers text inside */
+    text-decoration: none;               /* No text decoration */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Light shadow for depth */
+}
+
+/* Hover effect for Hero Section About Us Button */
+#about-us-nav-btn:hover, .about-us-nav-button:hover {
+    background-color: #B4622F;           /* Change background to lighter brown */
+    color: #fff;                         /* Text color changes to white on hover */
+    transform: translateY(-2px);         /* Slight upward movement on hover */
+}
+
+/* Focus effect for Hero Section About Us Button */
+#about-us-nav-btn:focus, .about-us-nav-button:focus {
+    outline: none;                       /* Remove default focus outline */
+    box-shadow: 0 0 0 3px rgba(180, 98, 47, 0.5); /* Subtle focus shadow */
+}
 
 
 
@@ -831,9 +882,8 @@ margin-top: 7vw;
     justify-content: center; 
 }
 
-.AboutYouForm{
 
-}
+
 .Garrzzr{
     display: flex;
     width: 100%;
@@ -972,82 +1022,182 @@ margin-top: 7vw;
 
 
 
-
-/*REgister Area*/
-#RegisterAreaaa{
-
-    top: 0vw;
-    left: 0vw;
+/* Register Area (Modal) */
+#RegisterAreaaa {
+    top: 0;
+    left: 0;
     z-index: 300;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
-    display: none; /* flex IF EDIT, none if Not edit  */
+    display: none; /* Hidden by default */
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 }
 
-#RegisterFillupform{
-    position: absolute;
-    box-shadow: 0vw 0vw 1vw rgba(0, 0, 0, 0.2);
-    width: 40vw;
-    height: 30vw;
-    border-radius: 1vw;
+/* Registration Form Container */
+#RegisterFillupform {
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 80vw;
+    max-width: 1100px;
+    padding: 2vw;
+    border-radius: 10px;
     background-color: #ffffff;
     display: flex;
-    align-items: center;
-    justify-content: center; 
     flex-direction: column;
-
+    align-items: center;
 }
 
-#RegisterFillupform h2{
-    font-size: 3vw;
+/* Title styles */
+#RegisterFillupform h2 {
+    font-size: 2.5vw;
     margin-bottom: 2vw;
-}
-#RegisterFillupform input{
-    font-size: 1vw;
-    margin-bottom: 0.5vw;
-    width: 30vw;
-    padding: 0.5vw;
-    border-radius: 3vw;
-
+    font-weight: bold;
+    text-align: center;
+    color: #333;
 }
 
-#Registerbuttnnn{
-    font-size: 2vw;
-    background-color: rgb(42, 109, 23);
-    color: #fff;
-    border-radius: 3vw;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    margin-top: 3vw;
-}
-
-.BlurrBackgroundd{
-    position: absolute;
-    top: 0vw;
-    left: 0vw;
-    z-index: -1;
+/* Form container for input fields and image */
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
-    height: 100%;
-    background-color: #ffffff;
-    opacity: 0.8;  
 }
 
-#Rexitbtnnn{
+/* Form Section */
+.form-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+/* Input group for first and last name fields */
+.input-group {
+    display: flex;
+    gap: 1vw;
+    width: 100%;
+}
+
+#RegisterFillupform input {
+    font-size: 1.2vw;
+    margin-bottom: 1vw;
+    padding: 0.8vw;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 48%; /* Adjust width for two fields side by side */
+    box-sizing: border-box;
+}
+
+/* Register button styling */
+#Registerbuttnnn {
+    font-size: 1.8vw;
+    background-color: #3e8e41;
+    color: white;
+    border-radius: 8px;
+    padding: 1vw 2vw;
+    margin-top: 2vw;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for register button */
+#Registerbuttnnn:hover {
+    background-color: #2e6a2c;
+}
+
+/* Image Section */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 350px; /* Limit the image width */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Additional Info Section */
+.additional-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2vw;
+    text-align: left;
+    width: 40%; /* Control width */
+}
+
+.additional-info h3 {
+    font-size: 1.8vw;
+    font-weight: bold;
+    margin-top: 1vw;
+}
+
+.additional-info p {
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+
+.additional-info ul {
+    font-size: 1.2vw;
+    list-style: disc;
+    padding-left: 2vw;
+    margin-top: 1vw;
+}
+
+.additional-info a {
+    font-size: 1.4vw;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.additional-info a:hover {
+    color: #0051a1;
+}
+
+/* Close button (X) */
+#Rexitbtnnn {
     position: absolute;
     top: 1vw;
     right: 1vw;
-    background-color: #6A1C1C;
-    color: #fff;
-    width: 2vw;
-    height: 2vw;
-    border-radius: 3vw;
+    background-color: #c9302c;
+    color: white;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
     border: none;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+/* Error messages */
 .error {
     color: red;
-    font-size: 12px;
-    margin-top: 5px;
+    font-size: 1.2vw;
+    margin-top: 1vw;
+}
+
+/* Switch to login text */
+#RegisterFillupform h3 a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+#RegisterFillupform h3 a:hover {
+    color: #0066cc;
 }

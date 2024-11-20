@@ -1,0 +1,32 @@
+
+CREATE TABLE breed_characteristics (
+id INT PRIMARY KEY AUTO_INCREMENT,
+characteristic_name VARCHAR(255) NOT NULL,
+description TEXT,
+benefits TEXT,
+considerations TEXT,
+category ENUM('Physical', 'Personality', 'Health', 'Grooming'),
+subcategory VARCHAR(255),
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+
+Sample Data
+
+INSERT INTO breed_characteristics (
+characteristic_name,
+description,
+benefits,
+considerations,
+category,
+subcategory
+)
+VALUES (
+'Hypoallergenic',
+'Produces fewer allergens',
+'Suitable for allergy sufferers',
+'May require regular grooming',
+'Physical',
+'Coat Type'
+);

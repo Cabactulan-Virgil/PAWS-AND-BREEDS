@@ -1,0 +1,10 @@
+CREATE TABLE dog_breed_characteristics (
+  id INT PRIMARY KEY AUTO_INCREMENT,
+  breed_id INT NOT NULL,
+  characteristic_id INT NOT NULL,
+  value VARCHAR(255),
+  description TEXT,
+  rating TINYINT,
+  FOREIGN KEY (breed_id) REFERENCES dog_breeds(id),
+  FOREIGN KEY (characteristic_id) REFERENCES breed_characteristics(id)
+);
