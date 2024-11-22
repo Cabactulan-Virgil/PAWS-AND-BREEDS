@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #6A1C1C;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+    body {
+        zoom: 100%;
+    }
+}
+
+
+#LogoutButton{
+    background: #262626;
+    font-size: 1.1vw;
+    color: #fff;
+    border: 0.3vw solid #fff;
+    height: 4vw;
+    width: 10vw;
+}
+#LogoutButton:hover{
+    background: #474747;
+}

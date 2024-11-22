@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>PAWS-AND-BREEDS</title>
-    <link rel="stylesheet" href="home.css">
+    <title>Paws and Breeds | Home</title>
+    <link rel="stylesheet" href="Home.css">
+    <link rel="icon" href="img/1000001718 1.png">  
 </head>
 <body>
 
@@ -43,14 +44,15 @@
         <button id="Lexitbtnnn">X</button>
         <h2>LOGIN</h2>
         <h3>Already registered user, please login here.</h3><br>
-        <form method="POST" action="login.php">
-            <input type="text" placeholder="Username" required>
-            <input type="password" placeholder="Password" required>
-            <button id="loginbuttnnn">Login</button>
-        </form>
-        <h3><a href="#" id="switchToRegister">Don't have an account? Register</a></h3>
+        <input id="Usernameinput" type="text" placeholder="Username" required>
+        <input id="Passwordinput" type="password" placeholder="Password" required><br>
+        <button id="loginbuttnnn">Login</button>
+        <h3 id="switchToRegister">Don't have an account? Register></h3>
     </div>
 </div>
+
+
+
 <!-- Register Modal -->
 <div id="RegisterAreaaa" class="modal hidden">
     <div id="RegisterFillupform">
@@ -62,21 +64,24 @@
         <div class="form-container">
             <!-- Form Section -->
             <div class="form-section">
-                <form method="POST" action="Register.php">
+                <form method="POST">
                     <div class="input-group">
-                        <input type="text" name="firstname" placeholder="Firstname" required>
-                        <input type="text" name="lastname" placeholder="Lastname" required>
+                        <input id="Regis_Firstname" type="text" name="firstname" placeholder="Firstname" required>
+                        <input id="Regis_LastName" type="text" name="lastname" placeholder="Lastname" required>
                     </div>
-                    <input type="email" name="email" placeholder="Email" required>
-                    <input type="text" name="username" placeholder="Username" required>
-                    <input type="password" name="password" placeholder="Password" required>
+                    <div class="input-group2">
+                        <input id="Regis_Email" type="email" name="email" placeholder="Email" required>
+                        <input id="Regis_Username" type="text" name="username" placeholder="Username" required>
+                        <input id="Regis_Password"type="password" name="password" placeholder="Password" required>
+                    </div>
+
                     <button id="Registerbuttnnn">Register</button>
                 </form>
             </div>
             
             <!-- Image Section -->
             <div class="image-section">
-                <img src="New folder/PAWS-AND-BREEDS/img/1000001718 1.jpg" alt="Paws and Breeds Image">
+                <img src="img/pug-dog-jumping-white-background_957108-6 1.png" alt="Paws and Breeds Image">
             </div>
             
             <!-- Additional Text Section -->
@@ -380,6 +385,6 @@
     </div>
 </footer>
 
-<script src="handler.js"></script>
+<script src="Home.js"></script>
 </body>
 </html>

@@ -133,10 +133,12 @@ nav {
     position: absolute;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    min-width: 160px;
+    width: 10vw;
     z-index: 1;
     top: 100%;
     left: 0;
+    top: 2.3vw;
+    border-radius: 0.5vw;
     padding: 0;
     margin: 0;
 }
@@ -155,8 +157,8 @@ nav {
 
 /* Dropdown Button Styles */
 .dropdown-btn {
-    width: 100%;
-    padding: 10px;
+    width: 1vw;
+
     background-color: #EAE4E0;
     color: #6A1C1C;
     border: none;
@@ -416,8 +418,8 @@ nav {
 #register-now-btn {
     background: #B4622F; /* Same background as the hero section */
     color: #fff;
-    height: 3vw;
-    width: 12vw;
+    height: 2vw;
+    width: 8.8vw;
     border: 2px solid #B4622F;
     border-radius: 3vw;
     font-size: 1.2vw;
@@ -431,7 +433,7 @@ nav {
 #register-now-btn:hover {
     color: #B4622F;
     background-color: #fff;
-    scale: 1.1;
+    scale: 1.01;
 }
 
 /* Spacing Between Forms */
@@ -640,7 +642,12 @@ nav {
 .contact-info-item p {
     margin: 0;
 }
-
+.pagination{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+}
 /* Pagination Buttons */
 .pagination-button {
     font-size: 1.2vw;
@@ -944,14 +951,13 @@ margin-top: 7vw;
     text-decoration: none;
 }
 
-
 /*Login Area*/
 #LoginAreaaa{
-
-    top: 0vw;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    top: 23vw;
     left: 0vw;
     z-index: 300;
-    position: absolute;
+    position: sticky;
     width: 100%;
     height: 100%;
     display: none; /* flex IF EDIT, none if Not edit  */
@@ -976,24 +982,45 @@ margin-top: 7vw;
 #lOginFillupform h2{
     font-size: 3vw;
     margin-bottom: 2vw;
+    color: #1b1b1b;
 }
 #lOginFillupform input{
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin-bottom: 0.5vw;
     width: 30vw;
+    height: 3vw;
     padding: 0.5vw;
-    border-radius: 3vw;
+    border-radius: 0.5vw;
+    border: 0.1vw solid #b7b7b7;
 
+}
+
+#switchToRegister{
+    color: #1f1f1f;
+    position: absolute;
+    bottom: 1vw;
+    transition: 0.3s;
+}
+#switchToRegister:hover{
+    color: #347fcb;
 }
 
 #loginbuttnnn{
     font-size: 2vw;
-    background-color: rgb(42, 109, 23);
+    background-color: rgb(71, 144, 51);
     color: #fff;
-    border-radius: 3vw;
+    height: 3.5vw;
+    width: 10vw;
+    border-radius: 0.5vw;
     padding-left: 1vw;
     padding-right: 1vw;
-    margin-top: 3vw;
+    margin-top: 0vw;
+    border: none;
+    transition: 0.3s;
+}
+
+#loginbuttnnn:hover{
+    background-color: rgb(51, 126, 31);
 }
 
 .BlurrBackgroundd{
@@ -1011,7 +1038,7 @@ margin-top: 7vw;
     position: absolute;
     top: 1vw;
     right: 1vw;
-    background-color: #6A1C1C;
+    background-color: #c9302c;
     color: #fff;
     width: 2vw;
     height: 2vw;
@@ -1077,10 +1104,14 @@ margin-top: 7vw;
 }
 
 /* Input group for first and last name fields */
-.input-group {
+.input-group { 
     display: flex;
     gap: 1vw;
-    width: 100%;
+    width: 22vw;
+}
+.input-group2{ 
+    gap: 1vw;
+    width: 22vw;
 }
 
 #RegisterFillupform input {
@@ -1089,7 +1120,7 @@ margin-top: 7vw;
     padding: 0.8vw;
     border-radius: 8px;
     border: 1px solid #ccc;
-    width: 48%; /* Adjust width for two fields side by side */
+    width: 100%; /* Adjust width for two fields side by side */
     box-sizing: border-box;
 }
 
@@ -1100,7 +1131,7 @@ margin-top: 7vw;
     color: white;
     border-radius: 8px;
     padding: 1vw 2vw;
-    margin-top: 2vw;
+    margin-top: 1vw;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease;
@@ -1117,7 +1148,6 @@ margin-top: 7vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 2vw;
 }
 
 .image-section img {
