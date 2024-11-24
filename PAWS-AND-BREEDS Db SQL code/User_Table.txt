@@ -1,6 +1,6 @@
-CREATE DATABASE pawnandbreeds;
+CREATE DATABASE pawsandbreeds;
 
-USE pawnandbreeds;
+USE pawsandbreeds;
 
 CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,

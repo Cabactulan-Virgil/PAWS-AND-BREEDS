@@ -1,18 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <title>Paws and Breeds | User Home</title>
-        <link rel="stylesheet" href="User_Home.css">
-        <link rel="icon" href="img/1000001718 1.png">  
-    </head>
-    
-    <body>
-        <h1>FirstName:<h2 id="FirstnameArea">SAMPLE</h2></h1>
-        <h1>LastName:<h2 id="LastNameArea">SAMPLE</h2></h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Paws and Breeds | User Home</title>
+    <link rel="stylesheet" href="User_Home.css">
+    <link rel="icon" href="img/1000001718 1.png">
+</head>
 
-        <button id="LogoutButton">⚙️ LOGOUT</button>
-        <script src="User_Home.js"></script>
-    </body>
+<body>
+    <!-- Navigation Section -->
+    <nav class="nav-links">
+        <img src="img/1000001718 1.png" class="logo-img" alt="Paws and Breeds Logo">
+        <ul>
+            <li><a href="#HEROOO" class="active">Home</a></li>
+            <li><a href="#ABOUTUSSSS">About Us</a></li>
+            <li><a href="#DOGBREEEDS">Dog Breeds</a></li>
+            <li><a href="#REVIEWWWS">Reviews</a></li>
+            <li><a href="#ContactUSSSS">Contact Us</a></li>
+            
+            <!-- Account Dropdown -->
+            <li class="account-dropdown">
+                <button class="dropdown-toggle" id="login-label">Login</button>
+                <ul class="dropdown-content">
+                    <li><a href="#" id="dashboard-link">Dashboard</a></li>
+                    <li><a href="#" id="dog-profiles-link">Dog Profiles</a></li>
+                    <li><a href="#" id="community-link">Community</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a id="LogoutButton" href="#">⚙️ LOGOUT</a></li>
+                </ul>
+            </li>
+            
+            <!-- Search Area -->
+            <li>
+                <label for="SearchAreaa" class="visually-hidden">Search</label>
+                <input id="SearchAreaa" placeholder="Search..." aria-label="Search">
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- User Information Section -->
+        <section id="user-info">
+            <h1>User Information</h1>
+            <p>Username: <span id="UsernameArea">SAMPLE</span></p>
+            <p>First Name: <span id="FirstnameArea">SAMPLE</span></p>
+            <p>Last Name: <span id="LastNameArea">SAMPLE</span></p>
+            <p>Email: <span id="EmailArea">sample@example.com</span></p>
+        </section>
+
+        <!-- Dog Profiles Section -->
+        <section id="dog-profiles">
+            <h1>Dog Profiles</h1>
+            <ul id="dog-profiles-list">
+                <!-- Dynamic dog profiles will be listed here -->
+            </ul>
+            <button id="add-dog-profile-btn" onclick="showAddDogProfileForm()">+ Add New Dog Profile</button>
+        </section>
+
+        <!-- Community Section -->
+        <section id="community">
+            <h1>Community</h1>
+            <p>This is the community section. Here users can interact with others.</p>
+        </section>
+    </main>
+
+    <script src="User_Home.js"></script>
+</body>
 </html>
