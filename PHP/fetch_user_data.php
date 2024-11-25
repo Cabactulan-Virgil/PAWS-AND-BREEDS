@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 // Query to fetch user data (example query)
-$sql = "SELECT user_username, user_firstname, user_lastname, user_email FROM users WHERE user_id = ?";
+$sql = "SELECT user_username, user_firstname, user_lastname, user_password, user_email FROM users WHERE user_id = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $_GET['user_id']); // Assuming you pass user_id as a query parameter
 $stmt->execute();
@@ -25,4 +25,3 @@ if ($result->num_rows > 0) {
 }
 
 $conn->close();
-?>

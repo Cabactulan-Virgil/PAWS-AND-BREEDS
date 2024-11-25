@@ -94,9 +94,19 @@ document.getElementById('loginbuttnnn').addEventListener('click', async (event) 
             // Store the facultyId in sessionStorage (or localStorage)
             sessionStorage.setItem('user_id', result.user_id); // Store facultyId in sessionStorage
 
-            alert("Successfully Logged In.");
+            Swal.fire({
+                title: "Successfully Logged In as User.",
+                text: "Press okay to Proceed",
+                icon: "success",    
+                confirmButtonColor: '#469F22FF'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = `PAGES/User_Home.php`; //WHERE TO GO?
+                }else{
+                    window.location.href = `PAGES/User_Home.php`; //WHERE TO GO?
+                }
+            });
 
-            window.location.href = `PAGES/User_Home.php`; //WHERE TO GO?
         } else {
             // Handle server response errors
             usernameInput.setCustomValidity(result.message);
@@ -164,6 +174,7 @@ document.getElementById('Registerbuttnnn').addEventListener('click', async (even
         return; // Stop processing if validation fails
     }
 
+
     // If all validations pass, proceed with registration
     try {
         const response = await fetch('PHP/Home_RegistrationFunction.php', {
@@ -184,10 +195,32 @@ document.getElementById('Registerbuttnnn').addEventListener('click', async (even
 
         // Handle the response
         if (result.success) {
-            alert('Registration successful!');
-            location.reload();
+            Swal.fire({
+                title: "Account Successfully Created.",
+                text: "Press okay to Proceed",
+                icon: "success",
+                confirmButtonColor: '#469F22FF'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    location.reload();
+                }else{
+                    location.reload();
+                }
+            });
+
         } else {
-            alert(result.message || 'An error occurred during registration.');
+
+            Swal.fire({
+                title: "Oops...",
+                text: result.message || 'An error occurred during registration.',
+                icon: "error",
+                confirmButtonColor: '#9C250AFF'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                }else{
+                }
+            }); 
+
         }
     } catch (error) {
         console.error('Error:', error);
