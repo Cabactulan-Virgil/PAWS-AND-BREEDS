@@ -80,7 +80,7 @@ document.getElementById('loginbuttnnn').addEventListener('click', async (event) 
 
     // If all validations pass, proceed with the login
     try {
-        const response = await fetch('Home_LoginFunction.php', {
+        const response = await fetch('PHP/Home_LoginFunction.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -96,7 +96,7 @@ document.getElementById('loginbuttnnn').addEventListener('click', async (event) 
 
             alert("Successfully Logged In.");
 
-            window.location.href = `User_Home.html`; //WHERE TO GO?
+            window.location.href = `PAGES/User_Home.php`; //WHERE TO GO?
         } else {
             // Handle server response errors
             usernameInput.setCustomValidity(result.message);
@@ -166,7 +166,7 @@ document.getElementById('Registerbuttnnn').addEventListener('click', async (even
 
     // If all validations pass, proceed with registration
     try {
-        const response = await fetch('Home_RegistrationFunction.php', {
+        const response = await fetch('PHP/Home_RegistrationFunction.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

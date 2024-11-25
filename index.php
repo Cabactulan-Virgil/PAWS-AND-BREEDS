@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Paws and Breeds | Home</title>
-    <link rel="stylesheet" href="Home.css">
-    <link rel="icon" href="img/1000001718 1.png">  
+    <link rel="stylesheet" href="CSS/Home.css">
+    <link rel="icon" href="Assets/1000001718 1.png">  
 </head>
 <body>
 
 
 <!-- Navigation Section -->
 <div class="nav-links">
-    <img src="img/1000001718 1.png" class="logo-img" alt="Logo">
+    <img src="Assets/1000001718 1.png" class="logo-img" alt="Logo">
     <ul>
         <li><a href="#HEROOO">Home</a></li>
         <li><a href="#ABOUTUSSSS">About Us</a></li>
@@ -81,7 +81,7 @@
             
             <!-- Image Section -->
             <div class="image-section">
-                <img src="img/pug-dog-jumping-white-background_957108-6 1.png" alt="Paws and Breeds Image">
+                <img src="Assets/pug-dog-jumping-white-background_957108-6 1.png" alt="Paws and Breeds Image">
             </div>
             
             <!-- Additional Text Section -->
@@ -123,7 +123,7 @@
                 
                 
             </div>
-            <img src="img/1000001726 1.png" class="hero-image">
+            <img src="Assets/1000001726 1.png" class="hero-image">
         </div>
     </div>
 </section>
@@ -138,8 +138,8 @@
                     At Paws & Breeds, we're dedicated to providing the best care for your furry friends. Whether you have a product-related query or are interested in connecting with us for dog food-related business inquiries, we're here to assist you. Feel free to reach out for any questions or concerns. Your dog's well-being is our top priority, and we're committed to being a reliable partner on your pet care journey.
                 </p>
             </span>
-            <img src="img/Ellipse 1.png" class="about-us-img2"  style="max-width: 120%; height: auto;" >
-            <img src="img/pug-dog-jumping-white-background_957108-6 1.png" class="about-us-img1"  style="max-width: 120%; height: auto;">
+            <img src="Assets/Ellipse 1.png" class="about-us-img2"  style="max-width: 120%; height: auto;" >
+            <img src="Assets/pug-dog-jumping-white-background_957108-6 1.png" class="about-us-img1"  style="max-width: 120%; height: auto;">
             
         </div>
     </section>
@@ -176,42 +176,42 @@
         <div class="articles-container">
             <!-- Article Card 1 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>American Bully</h3>
 
                 <button>Read More</button>
             </div>
             <!-- Article Card 2 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>Poodle</h3>
 
                 <button>Read More</button>
             </div>
             <!-- Article Card 3 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>German Shepherd</h3>
 
                 <button>Read More</button>
             </div>
             <!-- Article Card 4 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>Beagle</h3>
 
                 <button>Read More</button>
             </div>
             <!-- Article Card 5 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>Golden Retriever</h3>
 
                 <button>Read More</button>
             </div>
             <!-- Article Card 6 -->
             <div class="article-card">
-                <img src="img/American Bully.png" alt="Bulldog" class="article-image">
+                <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
                 <h3>Labrador</h3>
 
                 <button>Read More</button>
@@ -272,19 +272,19 @@
         <h2>Popular Articles</h2>
         <div class="articles-container">
             <div class="article-card">
-                <img src="img/angry_chihuahua.png" alt="Understanding Dog Breeds" class="article-image">
+                <img src="Assets/angry_chihuahua.png" alt="Understanding Dog Breeds" class="article-image">
                 <h3>Understanding Dog Breeds</h3>
                 <p>Explore the characteristics and behaviors of different dog breeds.</p>
                 <button>Read More</button>
             </div>
             <div class="article-card">
-                <img src="img/Rectangle 13.png" alt="Top 10 Dog Training Tips" class="article-image">
+                <img src="Assets/Rectangle 13.png" alt="Top 10 Dog Training Tips" class="article-image">
                 <h3>Top 10 Dog Training Tips</h3>
                 <p>Learn effective training techniques for your furry friend.</p>
                 <button>Read More</button>
             </div>
             <div class="article-card">
-                <img src="img/Rectangle 14.png" alt="Dog Nutrition Essentials" class="article-image">
+                <img src="Assets/Rectangle 14.png" alt="Dog Nutrition Essentials" class="article-image">
                 <h3>Dog Nutrition Essentials</h3>
                 <p>Find out what to feed your dog for a healthy lifestyle.</p>
                 <button>Read More</button>
@@ -335,21 +335,21 @@
     <div class="contact-info-row">
         <!-- Location Section -->
         <div class="contact-info-item">
-            <img src="img/internet 1.png" alt="Location Icon" class="contact-icon">
+            <img src="Assets/internet 1.png" alt="Location Icon" class="contact-icon">
             <h4>OUR LOCATION</h4>
             <p>Seoul, Korea</p>
         </div>
 
         <!-- Call Us Section -->
         <div class="contact-info-item">
-            <img src="img/telephone 1.png" alt="Phone Icon" class="contact-icon">
+            <img src="Assets/telephone 1.png" alt="Phone Icon" class="contact-icon">
             <h4>CALL US</h4>
             <p>+82-2-323-6850</p>
         </div>
 
         <!-- Email Section -->
         <div class="contact-info-item">
-            <img src="img/mail 1.png" alt="Email Icon" class="contact-icon">
+            <img src="Assets/mail 1.png" alt="Email Icon" class="contact-icon">
             <h4>E-MAIL</h4>
             <p><a class="LinkToClickk" href="mailto:Paws&Breeds.com">Paws&Breeds.com</a></p>
         </div>
@@ -385,6 +385,6 @@
     </div>
 </footer>
 
-<script src="Home.js"></script>
+<script src="JS/Home.js"></script>
 </body>
 </html>

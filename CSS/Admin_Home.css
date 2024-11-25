@@ -1,0 +1,227 @@
+/* General Reset and Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.admin-dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Navigation Section */
+nav {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #007bff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Recent Activity Section */
+.recent-activity {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activity h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.activity-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.activity-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.activity-item:hover {
+    background-color: #e9ecef;
+}
+
+.activity-item p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.activity-item .activity-time {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Search Bar Section */
+.search-bar {
+    margin: 20px 0;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Profile Categories Section */
+.profile-categories {
+    margin: 20px 0;
+}
+
+.profile-categories h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.profile-categories ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profile-categories ul li {
+    margin: 5px 0;
+}
+
+.profile-categories ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.profile-categories ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Admin Settings Section */
+.admin-settings {
+    margin: 20px 0;
+}
+
+.admin-settings h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.admin-settings ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-settings ul li {
+    margin: 5px 0;
+}
+
+.admin-settings ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.admin-settings ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Explore Detailed Control Section */
+.explore-control {
+    margin: 20px 0;
+}
+
+.explore-control p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.explore-control ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.explore-control ul li {
+    margin: 5px 0;
+}
+
+.explore-control ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.explore-control ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistics {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .activity-item p {
+        font-size: 1rem;
+    }
+}

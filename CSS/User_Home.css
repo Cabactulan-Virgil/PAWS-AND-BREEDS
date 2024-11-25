@@ -1,0 +1,231 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #6A1C1C;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Media Query for Desktop */
+@media (min-width: 1024px) {
+    body {
+        zoom: 100%;
+    }
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for separation */
+}
+
+/* Main navigation container */
+.nav-links {
+    position: fixed;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 5vw;
+    top: 0vw;
+    z-index: 300;
+}
+
+/* Logo styling */
+.logo-img {
+    margin-left: 2vw;
+    width: 9vw;
+}
+
+/* Navigation links styling */
+.nav-links ul {
+    display: flex;
+    list-style: none;   
+    align-items: center;
+    gap: 1vw;
+}
+
+/* Nav link styles */
+.nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1vw;
+    padding: 0.8vh 1vw;
+}
+
+/* Hover effect for nav links */
+.nav-links ul li a:hover {
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
+
+/* Account Dropdown Styles */
+.account-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Toggle (Login Button) */
+.account-dropdown .dropdown-toggle {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0.8vh 1vw;
+    font-size: 1vw;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: transparent;
+    border: none;
+}
+
+/* Hover effect for dropdown toggle */
+.account-dropdown .dropdown-toggle:hover {
+    background-color: #6A1C1C;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Dropdown Content (hidden by default) */
+.account-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 10vw;
+    z-index: 1;
+    top: 0%;
+    left: 0;
+    top: 2.3vw;
+    border-radius: 0.5vw;
+    padding: 0;
+    margin-bottom: 1vw;
+}
+
+#LogoutButton{
+    border: none;
+    background-color: none;
+    text-decoration: none;
+}
+/* Dropdown Content Cleanup */
+.account-dropdown .dropdown-content li {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Dropdown Item Hover */
+.account-dropdown .dropdown-content li:hover {
+    background-color: #f2f2f2;
+}
+
+/* Show dropdown on hover */
+.account-dropdown:hover .dropdown-content {
+    display: none;
+}
+#Dropdownnn{
+    display: none;
+}
+/* Search Bar */
+#SearchAreaa {
+    margin-right: 2vw;
+    width: 15vw;
+    height: 2vw;
+    background-color: #fff;
+    color: #1f1f1f;
+    border: 0.1vw solid #1f1f1f;
+    border-radius: 5vw;
+    padding-left: 1vw;
+}
+
+/* Search Bar focus */
+#SearchAreaa:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(180, 98, 47, 0.4); /* Subtle focus shadow */
+}
+
+/* Logout Button */
+#LogoutButton {
+    color: #6A1C1C;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#LogoutButton:hover {
+    text-decoration: underline;
+    color: #B4622F;
+}
+
+/* Logo */
+.logo img {
+    width: 104px;
+    height: auto;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .nav-links ul {
+        gap: 2vw;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.5vw;
+    }
+
+    #SearchAreaa {
+        width: 20vw;
+        height: 2.5vw;
+    }
+
+    .logo-img {
+        width: 12vw;
+    }
+
+    .account-dropdown .dropdown-toggle {
+        font-size: 1.5vw;
+    }
+
+    .dropdown-content {
+        width: 12vw;
+    }
+}
+
+#HiddenPassword{
+    display: none;
+}
+#AccountArea{
+    padding: 2vw;
+    border-radius: 1vw;
+    width: 70vw;
+    height: 40vw;
+    box-shadow: 0 0px 1vw rgba(0, 0, 0, 0.2); /* Light shadow for separation */
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -44%); /* Center the element */
+}
+
+
+#AccountArea p{
+    line-height: 2vw;
+}
+
