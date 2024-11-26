@@ -179,42 +179,42 @@
                 <div class="articles-container">
                     <!-- Article Card 1 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/AmericanBully.jpeg" class="article-image">
                         <h3>American Bully</h3>
 
                         <button>Read More</button>
                     </div>
                     <!-- Article Card 2 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/Poodle.jpg" class="article-image">
                         <h3>Poodle</h3>
 
                         <button>Read More</button>
                     </div>
                     <!-- Article Card 3 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/GermanSheperd.jpg" class="article-image">
                         <h3>German Shepherd</h3>
 
                         <button>Read More</button>
                     </div>
                     <!-- Article Card 4 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/Beagle.jpg" class="article-image">
                         <h3>Beagle</h3>
 
                         <button>Read More</button>
                     </div>
                     <!-- Article Card 5 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/GoldenRetriever.jpg" class="article-image">
                         <h3>Golden Retriever</h3>
 
                         <button>Read More</button>
                     </div>
                     <!-- Article Card 6 -->
                     <div class="article-card">
-                        <img src="Assets/American Bully.png" alt="Bulldog" class="article-image">
+                        <img src="Assets/Labrador.jpg" class="article-image">
                         <h3>Labrador</h3>
 
                         <button>Read More</button>

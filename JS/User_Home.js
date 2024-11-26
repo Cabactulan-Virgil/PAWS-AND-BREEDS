@@ -14,7 +14,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
-
+// NAVIGATION FUNCTIONS
+document.getElementById('Goto_UserAccountArea').addEventListener('click', () => {
+    window.location.href = 'User_Home.php';
+});
+document.getElementById('Goto_DogBreeds').addEventListener('click', () => {
+    window.location.href = 'User_DogBreeds.php';
+});
 
 
 

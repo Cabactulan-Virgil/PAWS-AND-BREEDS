@@ -31,14 +31,14 @@ if ($conn->connect_error) {
         <img src="../Assets/1000001718 1.png" class="logo-img" alt="Paws and Breeds Logo">
         <ul>
             <li><a href="#HEROOO" class="active">Home</a></li>
-            <li><a href="#DOGBREEEDS">Dog Breeds</a></li>
+            <li><a id="Goto_DogBreeds">Dog Breeds</a></li>
             <li><a href="#REVIEWWWS">Reviews</a></li>
 
             <!-- Account Dropdown -->
             <li class="account-dropdown">
                 <button class="dropdown-toggle" id="login-label">NAME</button>
                 <ul class="dropdown-content" id="Dropdownnn">
-                    <li><a href="#" id="dog-profiles-link">Account</a></li>
+                    <li><a href="#" id="Goto_UserAccountArea">Account</a></li>
                     <li><button id="LogoutButton">⚙️ LOGOUT</button></li>
                 </ul>
             </li>
