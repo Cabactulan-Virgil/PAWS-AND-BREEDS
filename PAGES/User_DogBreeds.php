@@ -30,9 +30,8 @@ if ($conn->connect_error) {
     <nav class="nav-links">
         <img src="../Assets/1000001718 1.png" class="logo-img" alt="Paws and Breeds Logo">
         <ul>
-            <li><a href="#HEROOO" class="active">Home</a></li>
+            <li><a id="Goto_Homee">Home</a></li>
             <li><a id="Goto_DogBreeds">Dog Breeds</a></li>
-            <li><a href="#REVIEWWWS">Reviews</a></li>
 
             <!-- Account Dropdown -->
             <li class="account-dropdown">
@@ -43,10 +42,6 @@ if ($conn->connect_error) {
                 </ul>
             </li>
 
-            <!-- Search Area -->
-            <li>
-                <input id="SearchAreaa" placeholder="Search..." aria-label="Search">
-            </li>
         </ul>
     </nav>
 
@@ -55,6 +50,9 @@ if ($conn->connect_error) {
         <span class="dog-breeds-container">
             <span class="Garrrr">
                 <div class="filterAreaa">
+                    <h2>Search:</h2>
+                    <input id="SearchBoxforDogs" placeholder="Search...">
+                    <h2>Filters:</h2>
                     <select id="OptionforFilter">
                         <option value="">Select A Breed</option>
                         <option value="BullDoggie">Bull Doggie</option>

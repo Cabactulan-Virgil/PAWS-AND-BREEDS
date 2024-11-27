@@ -30,9 +30,8 @@ if ($conn->connect_error) {
     <nav class="nav-links">
         <img src="../Assets/1000001718 1.png" class="logo-img" alt="Paws and Breeds Logo">
         <ul>
-            <li><a href="#HEROOO" class="active">Home</a></li>
+            <li><a id="Goto_Homee">Home</a></li>
             <li><a id="Goto_DogBreeds">Dog Breeds</a></li>
-            <li><a href="#REVIEWWWS">Reviews</a></li>
 
             <!-- Account Dropdown -->
             <li class="account-dropdown">
@@ -43,63 +42,55 @@ if ($conn->connect_error) {
                 </ul>
             </li>
 
-            <!-- Search Area -->
-            <li>
-                <input id="SearchAreaa" placeholder="Search..." aria-label="Search">
-            </li>
         </ul>
     </nav>
 
-    <!-- Main Content -->
-    <div id="AccountArea">
-        <div id="UserDetails">
-            <input type="hidden" id="Stored_User_ID" value="">
-            <h1>User Information</h1>
-            <div>
-                <p>First Name: </p><span id="FirstnameArea"><?= htmlspecialchars($user['user_firstname']) ?></span>
-            </div>
-            <div>
-                <p>Last Name: </p><span id="LastNameArea"><?= htmlspecialchars($user['user_lastname']) ?></span>
-            </div>
-            <div>
-                <p>Username: </p><span id="UsernameArea"><?= htmlspecialchars($user['user_username']) ?></span>
-            </div>
-            <div>
-                <p>Password: </p><span id="PasswordArea"><?= htmlspecialchars($user['user_password']) ?></span>
-                <button id="PasswordShowerBtn">Show</button>
-            </div>
-            <div>
-                <p>Email: </p><span id="EmailArea"><?= htmlspecialchars($user['user_email']) ?></span>
-            </div>
 
-            <button id="EditUserBtn">Edit</button>
+
+    <!-- Hero Section -->
+    <section class="hero" id="HEROOO">
+        <div class="hero-slider">
+            <!-- First Slide (Hero Content) -->
+            <div class="slide active">
+                <div class="hero-content">
+                    <h1>Find the Breed That Fits Your<br>Lifestyle!</h1>
+                    <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
+                    <!-- Know About Us Button with Link -->
+                </div>
+                <img src="../Assets/1000001726 1.png" class="hero-image">
+            </div>
         </div>
 
-        <div id="EditForm" style="display:none;">
-            <h1>Edit User Information</h1>
-            <form method="POST">
-                <div>
-                    <p>First Name: </p><input id="Edit_FirstName" name="first_name" placeholder="First Name..">
-                </div>
-                <div>
-                    <p>Last Name: </p><input id="Edit_LastName" name="last_name" placeholder="Last Name..">
-                </div>
-                <div>
-                    <p>Username: </p><input id="Edit_Username" name="username" placeholder="Username..">
-                </div>
-                <div>
-                    <p>Password: </p><input id="Edit_Password" name="password" placeholder="Password..">
-                </div>
-                <div>
-                    <p>Email: </p><input id="Edit_Email" name="email" placeholder="Email..">
-                </div>
-                <button type="submit" name="save" id="SaveUserBtn">Save</button>
-                <button type="button" id="CancelUserBtn">Cancel</button>
-            </form>
-        </div>
-    </div>
 
-    </div>
+        <span class="AlignAreee">
+            <h2>What Pet Parents are Saying</h2>
+            <div class="review">
+                <p><strong>Virgil G.</strong></p>
+                ⭐⭐⭐⭐★
+                <p>Namaak akong iro, gipaak pud nako.</p>
+            </div>
+
+            <div class="review">
+                <p><strong>Chrisha K.</strong></p>
+                ⭐⭐⭐⭐⭐
+                <p>MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW.</p>
+                </form>
+            </div>
+
+            <div class="review">
+                <p><strong>Amiel B.</strong></p>
+                ⭐⭐★★★
+                <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
+                </form>
+            </div>
+            <button id="ShareBtnnn">Write a FeedBack!</button>
+        </span>
+
+
+
+
+
+    </section>
 
 
 

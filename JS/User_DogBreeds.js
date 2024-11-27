@@ -2,10 +2,7 @@
 var UserID;
 
 document.addEventListener('DOMContentLoaded', function () {
-    const INPUTUserID = document.getElementById("Stored_User_ID");
     UserID = sessionStorage.getItem('user_id'); 
-    INPUTUserID.value = UserID;
-    console.log(INPUTUserID);
     if (!UserID) {
         window.location.href = '../index.php'; 
     } else {
@@ -16,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function () {
 var OrigPassword;
 // FETCH USER DATA FUNCTION
 function fetchUserData() {
-    console.log(UserID);
     fetch(`../PHP/fetch_user_data.php?user_id=${UserID}`) // Pass user_id as query parameter
         .then(response => response.json())
         .then(data => {
@@ -36,10 +32,13 @@ function fetchUserData() {
 
 // NAVIGATION FUNCTIONS
 document.getElementById('Goto_UserAccountArea').addEventListener('click', () => {
-    window.location.href = 'User_Home.php';
+    window.location.href = 'User_Account.php';
 });
 document.getElementById('Goto_DogBreeds').addEventListener('click', () => {
     window.location.href = 'User_DogBreeds.php';
+});
+document.getElementById('Goto_Homee').addEventListener('click', () => {
+    window.location.href = 'User_Home.php';
 });
 
 

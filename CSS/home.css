@@ -592,6 +592,19 @@ nav {
 
 }
 
+.TransparentWhite{
+
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0;
+    z-index: -1;
+}
+
 .article-card {
     justify-self: center;
     width: 288px;
@@ -607,7 +620,8 @@ nav {
 
 .article-image {
     width: 100%;
-    height: auto;
+    height: 10vw;
+    object-fit: cover;
 }
 
 .article-card h3 {

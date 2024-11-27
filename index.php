@@ -15,6 +15,7 @@
 
     <!-- Navigation Section -->
     <div class="nav-links">
+        <div class="TransparentWhite"></div>
         <img src="Assets/1000001718 1.png" class="logo-img" alt="Logo">
         <ul>
             <li><a href="#HEROOO">Home</a></li>
@@ -39,6 +40,7 @@
                 <input id="SearchAreaa" placeholder="Search..">
             </li>
         </ul>
+
     </div>
 
     <!-- Login Modal -->
@@ -261,10 +263,11 @@
                 <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
                 </form>
             </div>
+            <button id="ShareBtnnn">Share your feedback with us!</button>
         </span>
 
 
-        <button id="ShareBtnnn">Share your feedback with us!</button>
+
     </section>
 
 

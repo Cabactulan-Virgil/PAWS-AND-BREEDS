@@ -77,6 +77,7 @@ nav {
 
 /* Account Dropdown Styles */
 .account-dropdown {
+    margin-right: 10vw;
     position: relative;
     display: inline-block;
 }
@@ -326,15 +327,23 @@ nav {
 
 
 
-
+.filterAreaa h2{
+    line-height: 1vw;
+    margin-top: 2vw;
+}
 
 
 .filterAreaa{
+    padding: 1vw;
+    background-color: #fff;
+    box-shadow: 0 0px 1vw rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
     margin-left: 2vw;
+    margin-top: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30vw;
+    width: 50vw;
     height: 30vw;
 }
 .dog-breeds-description{
@@ -440,6 +449,19 @@ margin-top: 6.5vw;
     margin-bottom: 2vw;
     margin-top: 2vw;
 }
+
+#SearchBoxforDogs{
+    margin-top: 1vw;
+    width: 100%;
+    height: 5vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 1.2vw;
+    color: #85451d;
+    border-radius: 30vw;
+    border: 0.18vw solid #85451d;
+    transition: background-color 0.3s ease;  
+}
 #OptionforFilter{
     margin-top: 1vw;
     width: 100%;
@@ -478,11 +500,15 @@ margin-top: 6.5vw;
     align-self: center;
     gap: 0vw;
     width: 100%;
-    padding-left: 10vw;
+    padding-left: 5vw;
     padding-right: 10vw;
 
 }
 
 #Goto_DogBreeds{
+    cursor:pointer;
     color: #fff;
+}
+#Goto_Homee{
+    cursor:pointer;
 }
