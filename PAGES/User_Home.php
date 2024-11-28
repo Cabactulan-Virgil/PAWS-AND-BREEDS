@@ -87,8 +87,14 @@ if ($conn->connect_error) {
         </span>
 
 
-
-
+        <div id="ADDFEEDBACK">
+            <div id="DarkBackG"></div>
+            <div id="FeedBackForm">
+                <button id="FeedBackClose">X</button>
+                <input id="Feedback_Comment" placeholder="Comment..">
+                <button id="">Submit</button>
+            </div>
+        </div>
 
     </section>
 

@@ -478,3 +478,37 @@ nav {
     cursor:pointer;
     color: #fff;
 }
+
+
+#ADDFEEDBACK{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+
+
+
+#FeedBackForm{
+    background-color: #fff;
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+}
+
+#DarkBackG{
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+#Feedback_Comment{
+    width: 90%;
+    height: 10vw;
+}

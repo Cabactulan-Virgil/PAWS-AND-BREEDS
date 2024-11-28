@@ -263,10 +263,9 @@
                 <p>From tiny French Bulldogs to giant Great Danes, our dog breed gallery has everything you need to know about your favourite dog breed!</p>
                 </form>
             </div>
-            <button id="ShareBtnnn">Share your feedback with us!</button>
         </span>
 
-
+        <button id="ShareBtnnn">Share your feedback with us!</button>
 
     </section>
 

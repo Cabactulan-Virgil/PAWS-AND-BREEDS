@@ -43,6 +43,17 @@ document.getElementById('Goto_Homee').addEventListener('click', () => {
 
 
 
+document.getElementById('ShareBtnnn').addEventListener('click', () => {
+    document.getElementById("ADDFEEDBACK").style.display = 'flex';
+});
+
+
+
+document.getElementById('FeedBackClose').addEventListener('click', () => {
+    document.getElementById("ADDFEEDBACK").style.display = 'none';
+});
+
+
 
 
 
